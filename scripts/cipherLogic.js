@@ -38,8 +38,8 @@ function doShift() {
 }
 
 function doBreak() {
-	var cipherText = document.getElementById("cipherText").value;
 	//Grabs cipher text from text area.
+	var cipherText = document.getElementById("cipherText").value;
 	bestEntropy = getLowestEntropy(cipherText);
 	//Sets the text area to the best solution.
 	document.getElementById("cipherText").value = getShift(cipherText, bestEntropy);
